@@ -103,22 +103,6 @@ jobs:
             out_os: openwrt
             out_arch: armv7
 
-          - id: openwrt_mips
-            goos: linux
-            goarch: mips
-            gomips: softfloat
-            suffix: ""
-            out_os: openwrt
-            out_arch: mips
-
-          - id: openwrt_mipsle
-            goos: linux
-            goarch: mipsle
-            gomips: softfloat
-            suffix: ""
-            out_os: openwrt
-            out_arch: mipsle
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
